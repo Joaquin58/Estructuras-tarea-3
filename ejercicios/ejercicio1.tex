@@ -1,0 +1,69 @@
+\chapter*{Asumiendo los axiomas de un álgebra booleana  A = \{{0,1},+,$\cdot$\} demostrar las siguientes propiedades:}
+\begin{enumerate}[label=\alph*)]
+	\item Idempotencia: $x+x = x $ y $ xx = x$.
+	\item Idempotencia de complemento:  $(\bar{\bar{x}})= x$.
+	\item Elemento dominante: $x+1 = 1$ y $x0 = 0$.
+	\item Absorción: $x+xy = x$ y $x(x+y) = x$.
+\end{enumerate}
+\begin{multicols}{2}
+	\noindent
+	$\underline{Dem \;a)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		(x+x) & =(x+x)\cdot 1           \\
+		      & =(x+x)\cdot (x+\bar{x}) \\
+		      & =x + x\bar{x}           \\
+		      & =x + 0                  \\
+		      & =x\; \blacksquare       \\
+	\end{align*}
+
+	\columnbreak
+
+	\noindent
+	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		xx & =xx+0              \\
+		   & =xx+(x\bar{x})     \\
+		   & =x\cdot(x+\bar{x}) \\
+		   & =x\cdot 1          \\
+		   & =x                 \\
+	\end{align*}
+\end{multicols}
+\begin{multicols}{2}
+	\noindent
+	$\underline{Dem \;b)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		(\bar{\bar{x}}) & = x \\
+	\end{align*}
+\end{multicols}
+
+\begin{multicols}{2}
+	\noindent
+	$\underline{Dem \;c)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		(x+1) & = 1 \\
+	\end{align*}
+
+	\columnbreak
+
+	\noindent
+	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		x0 & = 0 \\
+	\end{align*}
+\end{multicols}
+
+\begin{multicols}{2}
+	\noindent
+	$\underline{Dem \;d)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		(x+xy) & =x \\
+	\end{align*}
+
+	\columnbreak
+
+	\noindent
+	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	\begin{align*}
+		x(x+y) & =x \\
+	\end{align*}
+\end{multicols}
