@@ -40,7 +40,14 @@
 	\noindent
 	$\underline{Dem \;c)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
 	\begin{align*}
-		(x+1) & = 1 \\
+		(x+1) & = 1                                                            \\
+		x+1   & = x+1 \quad \text{(expresión inicial)}                         \\
+		      & = (x+1)(1) \quad \text{(identidad multiplicativa: $a·1=a$)}    \\
+		      & = (x+1)(x+x') \quad \text{(complemento: $x+x'=1$)}             \\
+		      & = xx+x x'+1x+1x' \quad \text{(distributiva)}                   \\
+		      & = x+x+1+1 \quad \text{(identidad: $xx=x$, $x·x'=0$)}           \\
+		      & = x+1 \quad \text{(idempotencia: $x+x=x$)}                     \\
+		      & = 1 \quad \text{(por los pasos anteriores)} \quad \blacksquare
 	\end{align*}
 
 	\columnbreak
