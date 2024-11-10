@@ -1,4 +1,4 @@
-\chapter*{Asumiendo los axiomas de un álgebra booleana  A = \{{0,1},+,$\cdot$\} demostrar las siguientes propiedades:}
+\chapter*{1) Asumiendo los axiomas de un álgebra booleana  A = \{{0,1},+,$\cdot$\} demostrar las siguientes propiedades:}
 \begin{enumerate}[label=\alph*)]
 	\item Idempotencia: $x+x = x $ y $ xx = x$.
 	\item Idempotencia de complemento:  $(\bar{\bar{x}})= x$.
@@ -7,7 +7,7 @@
 \end{enumerate}
 \begin{multicols}{2}
 	\noindent
-	$\underline{Dem \;a)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem \;a)}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
 		(x+x) & =(x+x)\cdot 1           \\
 		      & =(x+x)\cdot (x+\bar{x}) \\
@@ -19,7 +19,7 @@
 	\columnbreak
 
 	\noindent
-	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
 		xx & =xx+0              \\
 		   & =xx+(x\bar{x})     \\
@@ -30,31 +30,44 @@
 \end{multicols}
 \begin{multicols}{2}
 	\noindent
-	$\underline{Dem \;b)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem \;b)}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
-		(\bar{\bar{x}}) & = x \\
+		\text{Supongamos } \bar{\bar{x}}\neq x                                                                               \\
+		                                                            & x+\bar{x}=1; x\cdot{\bar{x}}=0                         \\
+		                                                            & \bar{x}+\bar{\bar{x}}=1; \bar{x}\cdot{\bar{\bar{x}}}=0 \\
+		x+\bar{x}=                                                  & \bar{x}+\bar{\bar{x}}=1                                \\
+		\text{Unicidad del complemento, }x \text{ y } \bar{\bar{x}} & \text{ son complemento de } \bar{x}                    \\
+		\implies x = \bar{\bar{x}} \mathrel{\text{\large!}}                                                                  \\
+		\therefore \bar{\bar{x}}= x\;\blacksquare
 	\end{align*}
 \end{multicols}
 
 \begin{multicols}{2}
 	\noindent
-	$\underline{Dem \;c)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem \;c)}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
-		(x+1) & = 1 \\
+		(x+1) & = x+(x+\bar{x}) \\
+		      & = (x+x)+\bar{x} \\
+		      & = x+\bar{x}     \\
+		      & = 1
 	\end{align*}
 
 	\columnbreak
 
 	\noindent
-	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
-		x0 & = 0 \\
+		x\cdot0 & = x\cdot(x\cdot \bar{x})  \\
+		        & = (x\cdot x)\cdot \bar{x} \\
+		        & = (x\cdot x)\cdot \bar{x} \\
+		        & = x\cdot \bar{x}          \\
+		        & = 0
 	\end{align*}
 \end{multicols}
 
 \begin{multicols}{2}
 	\noindent
-	$\underline{Dem \;d)}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem \;d)}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
 		x+xy            & =x \\
 		(x+x)(x+y)      & =  \\
@@ -67,7 +80,7 @@
 
 	\columnbreak
 	\noindent
-	$\underline{Dem}:\; \text{Sea $x$ un elemento del álgebra booleana}$
+	$\underline{Dem}:\; \text{Sea $x\in A$ un elemento del álgebra booleana}$
 	\begin{align*}
 		x(x+y)             & =x  \\
 		x\cdot x +x\cdot y & =   \\
