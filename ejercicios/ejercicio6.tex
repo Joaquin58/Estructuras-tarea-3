@@ -1,1 +1,107 @@
 \chapter*{Expresar las siguientes oraciones como fórmulas de la lógica de predicados; indicar las constantes, las variables, los cuantificadores y su alcance:}
+\vspace{-20px}
+\begin{multicols}{2}
+	\noindent
+	\begin{enumerate}[label=\alph*)]
+		\item Hay algunos médicos que son odontologos.
+		\item Ninguna planta es mamífero o pez.
+		\item Cualquiera puede tomarle el pelo a la directora.
+		\item Hay un abogado a quien cualquiera le toma el pelo
+		\item Cada uno de los estudiantes aprobo el examen con 10.
+		\item Un estudiante reprobo el examen y abandono el curso
+		\item Los gatos son mamiferos.
+		\item Un perro mordio a María.
+		\item Las novelas de Cervantes son buenas y divertidas
+		\item Si todos los gatos son felinos, entonces todos los gatos son mamifero
+	\end{enumerate}
+\end{multicols}
+\begin{multicols}{2}
+	\textbf{a) Hay algunos médicos que son odontologos.}\\
+	\textbf{Variables:} x es la variable\\
+	\textbf{Constantes:} $m =$ Médico, $o =$ Odontólogo\\
+	\textbf{Funciones:} $S(x,m)=x$ es Médico; $S(x,o)=x$ es Odontólogo\\
+	\textbf{Cuantificadores:} $\exists$ es el cuantificador\\
+	\textbf{Expresión: }$\exists x(S(x,m)\land S(x,o))$\\
+	\textbf{Alcance:} incluye toda la expresión que le sigue
+	\vspace{20px}
+
+	\textbf{b) Ninguna planta es mamífero o pez.}\\
+	\textbf{Variables:} x es la variable\\
+	\textbf{Constantes: } \\
+	\textbf{Funciones:} $P(x)=x$ es planta; $M(x)=x$ es mamífero; $Pz(x)=x$ es pez. \\
+	\textbf{Cuantificadores:} $\forall$ es el cuantificador\\
+	\textbf{Expresión }$\forall x(P(x)\rightarrow\neg(M(x)\lor Pz(x)))$\\
+	\textbf{Alcance:} incluye toda la expresión que le sigue
+	\vspace{20px}
+
+	\textbf{c) Cualquiera puede tomarle el pelo a la directora.}\\
+	\textbf{Variables: }$x$, $y$\\
+	\textbf{Constantes: }$d = directora$ \\
+	\textbf{Funciones: }$P(x,y)=\text{x le toma el pelo a y}$\\
+	\textbf{Cuantificadores: } $\forall$ (para todo)\\
+	\textbf{Alcance:} incluye toda la expresión que le sigue\\
+	\textbf{Expresión: }$\forall x(P(x,d))$
+	\vspace{20px}
+
+	\textbf{d) Hay un abogado a quien cualquiera le toma el pelo}\\
+	\textbf{Variables: }$x$, $y$\\
+	\textbf{Constantes: }NO hay\\
+	\textbf{Funciones: }$P(x,y)=$ x le toma el pelo a y; $A(y)=$ y es abogado \\
+	\textbf{Cuantificadores: }$\exists$ y $\forall$ son los cuantificadores\\
+	\textbf{Expresión: } $\exists y (A(y) \land \forall x P(x,y))$\\
+	\textbf{Alcance: }El alcance de $\exists$ es sobre todas la expresión y para $\forall$ es para la el predicado $P$
+	\vspace{20px}
+
+	\textbf{e) Cada uno de los estudiantes aprobo el examen con 10.}\\
+	\textbf{Variables: }$x$, $y$\\
+	\textbf{Constantes:} $c=10$\\
+	\textbf{Funciones: }$E(x)=x$ es estudiante; $A(x,c) = x$ aprobó el examen con $c$\\
+	\textbf{Cuantificadores: }$\forall$ es el cuantificador\\
+	\textbf{Expresión: }$\forall x(E(x)\land A(x,c))$\\
+	\textbf{Alcance: }El alcance de $\forall$ es para toda la expresión.
+	\vspace{20px}
+
+	\textbf{f) Un estudiante reprobo el examen y abandono el curso}\\
+	\textbf{Variables: } $x$\\
+	\textbf{Constantes: }No hay \\
+	\textbf{Funciones: } $E(x)=x$ es estudiante; $R(x) =x$ reprobo el examen; $A(x)=x$ abandono el curso\\
+	\textbf{Cuantificadores: }$\forall$  es el cuantificador\\
+	\textbf{Expresión: }$\forall x(E(x)\land R(x) \land A(x))$ \\
+	\textbf{Alcance: } El alcance de $\forall$ es para toda la expresión
+	\vspace{20px}
+
+	\textbf{g) Los gatos son mamiferos.}\\
+	\textbf{Variables: }$x$\\
+	\textbf{Constantes: } No hay\\
+	\textbf{Funciones:} $M(x)=x$ son mamíferos, $G(x)= x$ es gato \\
+	\textbf{Cuantificadores: }$\forall$\\
+	\textbf{Expresión: }$\forall x(G(x)\rightarrow M(x))$\\
+	\textbf{Alcance: }El alcance de $\forall$ es para toda la expresión
+	\vspace{20px}
+
+	\textbf{h) Un perro mordio a María}\\
+	\textbf{Variables: } $x$, $y$\\
+	\textbf{Constantes:}$m =$ María \\
+	\textbf{Funciones: }$P(x)=x$ es perro; $M(x,m)=x$ mordió a María \\
+	\textbf{Cuantificadores: }$\exists$\\
+	\textbf{Expresión: } $\exists x(P(x)\land M(x,m))$\\
+	\textbf{Alcance: }El alcance de $\exists$ es para toda la expresión
+	\vspace{20px}
+\newpage
+	\textbf{i) Las novelas de Cervantes son buenas y divertidas}\\
+	\textbf{Variables: }$x$\\
+	\textbf{Constantes: } $c =$ Cervantes\\
+	\textbf{Funciones: }$N(x,c) = x$ novela de Cervantes; $B(x)= x$ es buena; $D(x)=x$ es divertida\\
+	\textbf{Cuantificadores: }$\forall$\\
+	\textbf{Expresión: } $\forall x(N(x,c)\rightarrow (B(x)\land D(x)))$\\
+	\textbf{Alcance: }El alcance de $\forall$ abarca toda la expresión.
+	\vspace{20px}
+
+	\textbf{j) Si todos los gatos son felinos, entonces todos los gatos son mamifero}\\
+	\textbf{Variables: }$x$\\
+	\textbf{Constantes: } No hay\\
+	\textbf{Funciones: }$G(x)= x$ es gato; $F(x)=x$ es felino; $M(x)=x$ es mamífero\\
+	\textbf{Cuantificadores: }$\forall$\\
+	\textbf{Expresión: }$\forall x(G(x)\rightarrow F(x))\rightarrow(\forall x (G(x)\rightarrow M(x)))$\\
+	\textbf{Alcance: } El alcance de $\forall x$ es la subexpresión $G(x)\rightarrow F(x)$ y el alcance del segundo cuantificador $\forall x$ es la subexpresión $G(x)\rightarrow M(x)$
+\end{multicols}
