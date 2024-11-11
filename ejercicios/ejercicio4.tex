@@ -14,19 +14,18 @@
         0 & 1 & - & - & 1 & 0 & 1 \\ \hline
         1 & - & - & - & 1 & 1 & 1 \\ \hline
         \end{tabular}
-        %\caption{Tabla de coches disponibles}%
+        % \caption{Tabla de coches disponibles}
         \label{tab:coches}
 \end{center}
 
 Dadas estas entradas y Salidas, diseñaremos el circuito. \\
-Primero, definamos las expresiones que con estas entradas generan cada salida. \\
+Primero, definamos las expresiones que con estas entradas generan cada salida.
 \begin{align*}
 E_{1}+E_{2}=S_{1} \\
 E_{1} + \overline{E_{2}}E_{3} = S_{2} \\
-E_{1} + E_{2} + E_{3} +E_{4} = S_{3} \\
+E_{1} + E_{2} + E_{3} +E_{4} = S_{3} 
 \end{align*}
 Esto quiere decir que para la Salida 1 usaremos una compuerta $OR$ con $E_{1}$ y $E_{1}$, para la Salida 2 usaremos una compuerta $OR$ con $E_{1}$ y con la Salida de una entrada $AND$ de el complemento de $E_{2}$ con $E_{3}$, por último para la Salida 3 usaremos una compuerta $OR$ de todas las entradas. \\
-\newline
 El circuito resulta así: (Veremos también lo que resulta con las diferentes entradas.) \\
 \textbf{NOTA:} Para los Entradas con guión en la Tabla este circuito va a funcionar y regresará las salidas esperadas, ya sea 0 o 1.
 
@@ -44,7 +43,6 @@ El circuito resulta así: (Veremos también lo que resulta con las diferentes en
     \caption*{Con $E_{1}=0$, $E_{2}=0$, $E_{3}=0$ y $E_{4}=1$}
     \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/3ej4.png}\par
     \caption*{Con $E_{1}=0$, $E_{2}=0$, $E_{3}=1$ y $E_{4}=0$}
-
 \end{figure*}
 \newpage
 \begin{figure*}
