@@ -27,9 +27,31 @@ E_{1} + E_{2} + E_{3} +E_{4} = S_{3} \\
 \end{align*}
 Esto quiere decir que para la Salida 1 usaremos una compuerta $OR$ con $E_{1}$ y $E_{1}$, para la Salida 2 usaremos una compuerta $OR$ con $E_{1}$ y con la Salida de una entrada $AND$ de el complemento de $E_{2}$ con $E_{3}$, por último para la Salida 3 usaremos una compuerta $OR$ de todas las entradas. \\
 \newline
-Dado esto el circuito resulta así: \\
+El circuito resulta así: (Veremos también lo que resulta con las diferentes entradas.) \\
+\textbf{NOTA:} Para los Entradas con guión en la Tabla este circuito va a funcionar y regresará las salidas esperadas, ya sea 0 o 1.
+
 \begin{figure*}
     \centering
-    \includegraphics[height = 0.30\textheight]{recursos/Ejercicio4/CircuitoDecodificador.png}\par
+    \includegraphics[height = 0.33\textheight]{recursos/Ejercicio4/CircuitoDecodificador.png}\par
     \caption*{Circuito Decodificador}
+\end{figure*} 
+
+\begin{figure*}
+	\centering
+    \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/1ej4.png}\par
+    \caption*{Con $E_{1}=0$, $E_{2}=0$, $E_{3}=0$ y $E_{4}=0$}
+    \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/2ej4.png}\par
+    \caption*{Con $E_{1}=0$, $E_{2}=0$, $E_{3}=0$ y $E_{4}=1$}
+    \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/3ej4.png}\par
+    \caption*{Con $E_{1}=0$, $E_{2}=0$, $E_{3}=1$ y $E_{4}=0$}
+
 \end{figure*}
+\newpage
+\begin{figure*}
+	\centering
+    \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/4ej4.png}\par
+    \caption*{Con $E_{1}=0$, $E_{2}=1$, $E_{3}=0$ y $E_{4}=0$}
+    \includegraphics[height = 0.25\textheight]{recursos/Ejercicio4/5ej4.png}\par
+    \caption*{Con $E_{1}=1$, $E_{2}=0$, $E_{3}=0$ y $E_{4}=0$}
+\end{figure*}
+%\textbf{NOTA:} Para los Entradas con guión en la Tabla este circuito va a funcionar y regresará las salidas esperadas, ya sea 0 o 1.
