@@ -1,0 +1,76 @@
+\chapter*{Ejercicio 7}
+
+\textbf{7.}  Por cada formula: 
+\begin{enumerate}
+    \item Clasificar la presencia de variables en libres y ligadas
+    \item Indicar el alcance del cuantificador
+\end{enumerate}
+\textcolor{red}{a)} \[ R(x, y) \land L(y) \] \\
+\begin{enumerate}
+    \item \textbf{Variables Libres:} x, y\\
+    \textbf{Variables Ligadas:} No hay variables ligadas (ya que no hay cuantificadores)
+    \item No hay cuantificadores
+\end{enumerate}
+
+\textcolor{red}{b)} \[ \forall x \, R(x, f(x, y)) \land L(y) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} y \\
+    \textbf{Variables Ligadas:} x
+    \item EL alcance de $\forall x$ es $R(x, f(x, y))$
+\end{enumerate}
+
+\textcolor{red}{c)} \[ \exists x \, \exists y \, R(x, y) \land L(x, y) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} x,y de $L(x, y)$ \\
+    \textbf{Variables Ligadas:} x,y de $R(x, y)$
+    \item EL alcance de $\exists x$ y de $\exists y$ es $R(x, y)$
+\end{enumerate}
+
+\textcolor{red}{d)} \[ \exists y \, L(x, y) \lor \exists z \, R(x, z) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} x\\
+    \textbf{Variables Ligadas:} y de $L(x, y)$ y z de $R(x, z)$
+    \item EL alcance de  $\exists y$ es $L(x, y)$, y el Alcance de $\exists z$ es $R(x, z)$
+\end{enumerate}
+
+\textcolor{red}{e)} \[ \exists y \, R(a, y) \lor L(a) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} a \\
+    \textbf{Variables Ligadas:} y de $R(a, y)$
+    \item EL alcance de $\exists y$ es $R(a, y)$
+\end{enumerate}
+
+\textcolor{red}{f)} \[ D (f(x, y)) \lor \forall z \, R(z, r(y)) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} x,y\\
+    \textbf{Variables Ligadas:} z de $R(z, r(y))$
+    \item EL alcance de $\forall z$ es $R(z, r(y))$
+\end{enumerate}
+
+\textcolor{red}{f)} \[ \forall x \, (L(x) \rightarrow R(a, x) \land C(x, a)) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} a\\
+    \textbf{Variables Ligadas:} x
+    \item EL alcance de $\forall x$ es $L(x) \rightarrow (R(a, x) \land C(x, a))$
+\end{enumerate}
+
+\textcolor{red}{h)} \[ R(x, y, z) \land \exists y \, R(y, x, z) \rightarrow \forall x \, I(x, y) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} x,y,z de $R(x, y, z)$, x,z de $R(y, x, z)$, y de $I(x, y)$ \\
+    \textbf{Variables Ligadas:} y de $R(y, x, z)$ y x de $I(x, y)$
+    \item EL alcance de $\exists y$ es $R(y, x, z)$ , y de $\forall x$ es $I(x, y)$
+\end{enumerate}
+
+\textcolor{red}{i)} \[ \forall x \, (C(x, z) \land R(x, y)) \rightarrow C(y, z) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} z,y de $C(x, z) \land R(x, y)$ y $y$,z de $C(y, z)$\\
+    \textbf{Variables Ligadas:x de $C(x, z) \land R(x, y)$} 
+    \item EL alcance de $\forall x$ es $C(x, z) \land R(x, y)$
+\end{enumerate}
+
+\textcolor{red}{j)} \[ \forall x \, \exists z \, I(x, z) \rightarrow C(z, y) \land D(y) \]
+\begin{enumerate}
+    \item \textbf{Variables Libres:} z,y de $(C(z, y) \land D(y))$\\
+    \textbf{Variables Ligadas:} x de $I(x, z)$
+    \item EL alcance de $\forall x$ y de $\exists x$ es $I(x, z)$
+\end{enumerate}
