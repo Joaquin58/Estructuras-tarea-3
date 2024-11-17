@@ -168,6 +168,7 @@ cuantificadores (Impl p1 p2) = cuantificadores p1 + cuantificadores p2
 cuantificadores (Syss p1 p2) = cuantificadores p1 + cuantificadores p2
 cuantificadores _ = 0
 
+<<<<<<< HEAD:practica/practica3.hs
 -- Ejercicio 19: Contar conectivos lógicos
 conectivos :: Pred -> Int
 conectivos PTrue = 0
@@ -180,3 +181,8 @@ conectivos (Impl p1 p2) = 1 + conectivos p1 + conectivos p2
 conectivos (Syss p1 p2) = 1 + conectivos p1 + conectivos p2
 conectivos (PTodo _ p) = conectivos p
 conectivos (Existe _ p) = conectivos p
+=======
+aux :: Term -> Int
+aux (Var x) = 0 
+aux (Fun x y) = aux y  
+>>>>>>> 90479ecd73d201108e18e5dd2d24045ee627a086:practica/Practica03.hs
