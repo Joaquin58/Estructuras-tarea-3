@@ -150,7 +150,7 @@ auxiliar_repetidos (x:xs) =
     else x : auxiliar_repetidos xs 
 
 --Función RemoveVar
---Recibe un nombre  y una lista de nombres, y devuelve una nueva lista con todas las veces que aparecio el 
+--Recibe un nombre  de una lista de nombres dada, y devuelve una nueva lista con todas las veces que aparecio el 
 --recibido eliminadas. 
 removeVar :: Nombre -> [Nombre] -> [Nombre] 
 removeVar _ [] = [] 
@@ -221,7 +221,7 @@ cuantificadores (Syss x y) = cuantificadores x + cuantificadores y
 cuantificadores (PTodo x y) = 1 + cuantificadores y
 cuantificadores (Existe x y) = 1 + cuantificadores y
 
---Función aux:
+--Función aux para contar los términos dentro de la lista de términos del predicado.
 aux :: Term -> Int
 aux (Var x) = 0 
 aux (Fun x y) =sum (map aux y)
